@@ -8,11 +8,11 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ## 📋 Phase 1: Project Setup
 
-- [ ] Create project directory structure
-- [ ] Create `my_sqlite_request` file (with appropriate extension for your language)
-- [ ] Create `my_sqlite_cli` file (with appropriate extension)
-- [ ] Download test CSV files (nba_player_data.csv, etc.)
-- [ ] Set up basic file reading capability (CSV parser/library)
+- [x] Create project directory structure
+- [x] Create `my_sqlite_request` file (with appropriate extension for your language)
+- [x] Create `my_sqlite_cli` file (with appropriate extension)
+- [x] Download test CSV files (nba_player_data.csv, etc.)
+- [x] Set up basic file reading capability (CSV parser/library)
 - [ ] Create test CSV with simple data for initial testing
 
 ---
