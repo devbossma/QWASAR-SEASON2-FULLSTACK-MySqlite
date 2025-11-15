@@ -1,0 +1,3 @@
+,Player,height,weight,collage,born,birth_city,birth_state
+2047,Alaa Abdelnaby,208,108,Duke University,1968,Cairo,Egypt
+746,Zaid Abdul-Aziz,206,106,Iowa State University,1946,Brooklyn,New York
