@@ -21,17 +21,17 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ### Class Foundation
 
-- [ ] Create MySqliteRequest class
-- [ ] Implement `initialize/constructor` method
-- [ ] Set up instance variables for storing query state:
-  - [ ] `@from_table` (or equivalent)
-  - [ ] `@select_columns`
-  - [ ] `@where_conditions`
-  - [ ] `@join_info`
-  - [ ] `@order_config`
-  - [ ] `@operation_type` (SELECT, INSERT, UPDATE, DELETE)
-  - [ ] `@insert_data`
-  - [ ] `@update_data`
+- [x] Create MySqliteRequest class
+- [x] Implement `initialize/constructor` method
+- [x] Set up instance variables for storing query state:
+  - [x] `@from_table` (or equivalent)
+  - [x] `@select_columns`
+  - [x] `@where_conditions`
+  - [x] `@join_info`
+  - [x] `@order_config`
+  - [x] `@operation_type` (SELECT, INSERT, UPDATE, DELETE)
+  - [x] `@insert_data`
+  - [x] `@update_data`
 
 ---
 
@@ -39,29 +39,29 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ### Basic SELECT
 
-- [ ] Implement `from(table_name)` method
-  - [ ] Store table name
-  - [ ] Return `self` for chaining
-- [ ] Implement `select(column_name)` method
-  - [ ] Handle single column (string)
-  - [ ] Handle multiple columns (array)
-  - [ ] Handle `*` for all columns
-  - [ ] Return `self` for chaining
-- [ ] Implement basic `run()` method
-  - [ ] Read CSV file
-  - [ ] Parse into array of hashes
-  - [ ] Return selected columns only
-- [ ] **TEST:** `MySqliteRequest.new.from('data.csv').select('name').run`
+- [x] Implement `from(table_name)` method
+  - [x] Store table name
+  - [x] Return `self` for chaining
+- [x] Implement `select(column_name)` method
+  - [x] Handle single column (string)
+  - [x] Handle multiple columns (array)
+  - [x] Handle `*` for all columns
+  - [x] Return `self` for chaining
+- [x] Implement basic `run()` method
+  - [x] Read CSV file
+  - [x] Parse into array of hashes
+  - [x] Return selected columns only
+- [x] **TEST:** `MySqliteRequest.new.from('data.csv').select('name').run`
 
 ### Add WHERE Filtering
 
-- [ ] Implement `where(column_name, value)` method
-  - [ ] Store filter condition
-  - [ ] Return `self` for chaining
-- [ ] Update `run()` to filter results
-  - [ ] Apply WHERE condition before returning
-  - [ ] Handle case when column doesn't exist
-- [ ] **TEST:** `...select('name').where('state', 'Indiana').run`
+- [x] Implement `where(column_name, value)` method
+  - [x] Store filter condition
+  - [x] Return `self` for chaining
+- [x] Update `run()` to filter results
+  - [x] Apply WHERE condition before returning
+  - [x] Handle case when column doesn't exist
+- [x] **TEST:** `...select('name').where('state', 'Indiana').run`
 
 ### Add ORDER Sorting
 
