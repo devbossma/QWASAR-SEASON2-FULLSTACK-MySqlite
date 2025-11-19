@@ -65,26 +65,26 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ### Add ORDER Sorting
 
-- [ ] Implement `order(direction, column_name)` method
-  - [ ] Handle `:asc` direction
-  - [ ] Handle `:desc` direction
-  - [ ] Return `self` for chaining
-- [ ] Update `run()` to sort results
-  - [ ] Sort after filtering, before returning
-  - [ ] Handle numeric vs string sorting
-- [ ] **TEST:** `...where('state', 'Indiana').order(:asc, 'name').run`
+- [x] Implement `order(direction, column_name)` method
+  - [x] Handle `:asc` direction
+  - [x] Handle `:desc` direction
+  - [x] Return `self` for chaining
+- [x] Update `run()` to sort results
+  - [x] Sort after filtering, before returning
+  - [x] Handle numeric vs string sorting
+- [x] **TEST:** `...where('state', 'Indiana').order(:asc, 'name').run`
 
 ### Add JOIN
 
-- [ ] Implement `join(column_on_db_a, filename_db_b, column_on_db_b)` method
-  - [ ] Load second CSV file
-  - [ ] Store join configuration
-  - [ ] Return `self` for chaining
-- [ ] Update `run()` to perform join
-  - [ ] Match rows where join columns are equal
-  - [ ] Merge column data from both tables
-  - [ ] Handle duplicate column names
-- [ ] **TEST:** `...from('players.csv').join('team_id', 'teams.csv', 'id').run`
+- [x] Implement `join(column_on_db_a, filename_db_b, column_on_db_b)` method
+  - [x] Load second CSV file
+  - [x] Store join configuration
+  - [x] Return `self` for chaining
+- [x] Update `run()` to perform join
+  - [x] Match rows where join columns are equal
+  - [x] Merge column data from both tables
+  - [x] Handle duplicate column names
+- [x] **TEST:** `...from('players.csv').join('team_id', 'teams.csv', 'id').run`
 
 ---
 
@@ -92,50 +92,50 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ### INSERT
 
-- [ ] Implement `insert(table_name)` method
-  - [ ] Set operation type to INSERT
-  - [ ] Store table name
-  - [ ] Return `self` for chaining
-- [ ] Implement `values(data)` method
-  - [ ] Accept hash/object of column => value pairs
-  - [ ] Store insert data
-  - [ ] Return `self` for chaining
-- [ ] Update `run()` for INSERT
-  - [ ] Generate new ID for row
-  - [ ] Append row to CSV file
-  - [ ] Return success confirmation
-- [ ] **TEST:** `MySqliteRequest.new.insert('students').values({name: 'John', email: 'john@test.com'}).run`
+- [x] Implement `insert(table_name)` method
+  - [x] Set operation type to INSERT
+  - [x] Store table name
+  - [x] Return `self` for chaining
+- [x] Implement `values(data)` method
+  - [x] Accept hash/object of column => value pairs
+  - [x] Store insert data
+  - [x] Return `self` for chaining
+- [x] Update `run()` for INSERT
+  - [x] Generate new ID for row
+  - [x] Append row to CSV file
+  - [x] Return success confirmation
+- [x] **TEST:** `MySqliteRequest.new.insert('students').values({name: 'John', email: 'john@test.com'}).run`
 
 ### UPDATE
 
-- [ ] Implement `update(table_name)` method
-  - [ ] Set operation type to UPDATE
-  - [ ] Store table name
-  - [ ] Return `self` for chaining
-- [ ] Implement `set(data)` method
-  - [ ] Accept hash/object of column => value pairs
-  - [ ] Store update data
-  - [ ] Return `self` for chaining
-- [ ] Update `run()` for UPDATE
-  - [ ] Read all rows
-  - [ ] Apply WHERE filter to find matching rows
-  - [ ] Update matching rows with new values
-  - [ ] Write back to CSV
-  - [ ] Return count of updated rows
-- [ ] **TEST:** `MySqliteRequest.new.update('students').set({email: 'new@test.com'}).where('name', 'John').run`
+- [x] Implement `update(table_name)` method
+  - [x] Set operation type to UPDATE
+  - [x] Store table name
+  - [x] Return `self` for chaining
+- [x] Implement `set(data)` method
+  - [x] Accept hash/object of column => value pairs
+  - [x] Store update data
+  - [x] Return `self` for chaining
+- [x] Update `run()` for UPDATE
+  - [x] Read all rows
+  - [x] Apply WHERE filter to find matching rows
+  - [x] Update matching rows with new values
+  - [x] Write back to CSV
+  - [x] Return count of updated rows
+- [x] **TEST:** `MySqliteRequest.new.update('students').set({email: 'new@test.com'}).where('name', 'John').run`
 
 ### DELETE
 
-- [ ] Implement `delete()` method
-  - [ ] Set operation type to DELETE
-  - [ ] Return `self` for chaining
-- [ ] Update `run()` for DELETE
-  - [ ] Read all rows
-  - [ ] Apply WHERE filter to find matching rows
-  - [ ] Remove matching rows
-  - [ ] Write remaining rows back to CSV
-  - [ ] Return count of deleted rows
-- [ ] **TEST:** `MySqliteRequest.new.from('students').delete.where('name', 'John').run`
+- [x] Implement `delete()` method
+  - [x] Set operation type to DELETE
+  - [x] Return `self` for chaining
+- [x] Update `run()` for DELETE
+  - [x] Read all rows
+  - [x] Apply WHERE filter to find matching rows
+  - [x] Remove matching rows
+  - [x] Write remaining rows back to CSV
+  - [x] Return count of deleted rows
+- [x] **TEST:** `MySqliteRequest.new.from('students').delete.where('name', 'John').run`
 
 ---
 
@@ -143,65 +143,65 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ### REPL Setup
 
-- [ ] Set up readline/input loop
-- [ ] Display welcome message with version
-- [ ] Display prompt: `my_sqlite_cli> `
-- [ ] Read user input
-- [ ] Handle `quit` command to exit
-- [ ] Loop until quit
+- [x] Set up readline/input loop
+- [x] Display welcome message with version
+- [x] Display prompt: `my_sqlite_cli> `
+- [x] Read user input
+- [x] Handle `quit` command to exit
+- [x] Loop until quit
 
 ### SQL Parser Foundation
 
-- [ ] Create function to identify command type (SELECT/INSERT/UPDATE/DELETE)
-- [ ] Test with simple commands
+- [x] Create function to identify command type (SELECT/INSERT/UPDATE/DELETE)
+- [x] Test with simple commands
 
 ### SELECT Parser
 
-- [ ] Parse `SELECT columns FROM table`
-- [ ] Extract column names (handle `*`, single, multiple)
-- [ ] Extract table name
-- [ ] Parse `WHERE column = value` clause
-- [ ] Parse `JOIN table2 ON col1 = col2` clause
-- [ ] Build MySqliteRequest chain from parsed data
-- [ ] Execute and display results
-- [ ] **TEST:** `SELECT * FROM students;`
-- [ ] **TEST:** `SELECT name FROM students WHERE state = 'Indiana';`
+- [x] Parse `SELECT columns FROM table`
+- [x] Extract column names (handle `*`, single, multiple)
+- [x] Extract table name
+- [x] Parse `WHERE column = value` clause
+- [x] Parse `JOIN table2 ON col1 = col2` clause
+- [x] Build MySqliteRequest chain from parsed data
+- [x] Execute and display results
+- [x] **TEST:** `SELECT * FROM students;`
+- [x] **TEST:** `SELECT name FROM students WHERE state = 'Indiana';`
 
 ### INSERT Parser
 
-- [ ] Parse `INSERT INTO table VALUES (val1, val2, val3)`
-- [ ] Extract table name
-- [ ] Extract values from parentheses
-- [ ] Map values to columns (read CSV headers)
-- [ ] Build MySqliteRequest chain
-- [ ] Execute and display success message
-- [ ] **TEST:** `INSERT INTO students VALUES (John, john@test.com, A, https://blog.com);`
+- [x] Parse `INSERT INTO table VALUES (val1, val2, val3)`
+- [x] Extract table name
+- [x] Extract values from parentheses
+- [x] Map values to columns (read CSV headers)
+- [x] Build MySqliteRequest chain
+- [x] Execute and display success message
+- [x] **TEST:** `INSERT INTO students VALUES (John, john@test.com, A, https://blog.com);`
 
 ### UPDATE Parser
 
-- [ ] Parse `UPDATE table SET col1 = val1, col2 = val2 WHERE col = value`
-- [ ] Extract table name
-- [ ] Parse SET clause into hash/object
-- [ ] Parse WHERE clause
-- [ ] Build MySqliteRequest chain
-- [ ] Execute and display rows affected
-- [ ] **TEST:** `UPDATE students SET email = 'new@test.com' WHERE name = 'John';`
+- [x] Parse `UPDATE table SET col1 = val1, col2 = val2 WHERE col = value`
+- [x] Extract table name
+- [x] Parse SET clause into hash/object
+- [x] Parse WHERE clause
+- [x] Build MySqliteRequest chain
+- [x] Execute and display rows affected
+- [x] **TEST:** `UPDATE students SET email = 'new@test.com' WHERE name = 'John';`
 
 ### DELETE Parser
 
-- [ ] Parse `DELETE FROM table WHERE col = value`
-- [ ] Extract table name
-- [ ] Parse WHERE clause
-- [ ] Build MySqliteRequest chain
-- [ ] Execute and display rows affected
-- [ ] **TEST:** `DELETE FROM students WHERE name = 'John';`
+- [x] Parse `DELETE FROM table WHERE col = value`
+- [x] Extract table name
+- [x] Parse WHERE clause
+- [x] Build MySqliteRequest chain
+- [x] Execute and display rows affected
+- [x] **TEST:** `DELETE FROM students WHERE name = 'John';`
 
 ### Output Formatting
 
-- [ ] Format SELECT results (pipe-separated values)
-- [ ] Format INSERT/UPDATE/DELETE confirmations
-- [ ] Handle empty results gracefully
-- [ ] Handle errors with clear messages
+- [x] Format SELECT results (pipe-separated values)
+- [x] Format INSERT/UPDATE/DELETE confirmations
+- [x] Handle empty results gracefully
+- [x] Handle errors with clear messages
 
 ---
 
