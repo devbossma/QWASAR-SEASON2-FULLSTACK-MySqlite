@@ -1,0 +1,16 @@
+id,course_name,instructor,credits,department,student_id
+1,Data Structures,Dr. Anderson,4,Computer Science,1
+2,Linear Algebra,Dr. Martinez,3,Mathematics,2
+3,Quantum Mechanics,Dr. Johnson,4,Physics,3
+4,Algorithms,Dr. Anderson,4,Computer Science,4
+5,Molecular Biology,Dr. White,3,Biology,5
+6,Database Systems,Dr. Brown,3,Computer Science,1
+7,Calculus III,Dr. Martinez,4,Mathematics,7
+8,Thermodynamics,Dr. Johnson,3,Physics,8
+9,Genetics,Dr. White,4,Biology,9
+10,Web Development,Dr. Brown,3,Computer Science,10
+11,Discrete Math,Dr. Martinez,3,Mathematics,2
+12,Operating Systems,Dr. Anderson,4,Computer Science,6
+13,Cell Biology,Dr. White,3,Biology,5
+14,Statistical Mechanics,Dr. Johnson,4,Physics,3
+15,Machine Learning,Dr. Brown,4,Computer Science,1
