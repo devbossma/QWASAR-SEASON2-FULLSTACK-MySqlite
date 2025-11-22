@@ -209,32 +209,32 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ### Core Functionality Tests
 
-- [ ] Test with empty CSV file
-- [ ] Test with non-existent table/file
-- [ ] Test with non-existent column in WHERE
-- [ ] Test with non-existent column in SELECT
-- [ ] Test SELECT with no WHERE
-- [ ] Test UPDATE with no WHERE (updates all rows)
-- [ ] Test DELETE with no WHERE (deletes all rows)
-- [ ] Test JOIN with no matches
+- [x] Test with empty CSV file
+- [x] Test with non-existent table/file
+- [x] Test with non-existent column in WHERE
+- [x] Test with non-existent column in SELECT
+- [x] Test SELECT with no WHERE
+- [x] Test UPDATE with no WHERE (updates all rows)
+- [x] Test DELETE with no WHERE (deletes all rows)
+- [x] Test JOIN with no matches
 
 ### CLI Tests
 
-- [ ] Test invalid SQL syntax
-- [ ] Test malformed commands
-- [ ] Test missing semicolons
-- [ ] Test case sensitivity
-- [ ] Test extra whitespace
-- [ ] Test empty input
-- [ ] Test very long queries
+- [x] Test invalid SQL syntax
+- [x] Test malformed commands
+- [x] Test missing semicolons
+- [x] Test case sensitivity
+- [x] Test extra whitespace
+- [x] Test empty input
+- [x] Test very long queries
 
 ### Data Integrity Tests
 
-- [ ] Verify IDs are unique after INSERT
-- [ ] Verify CSV format is maintained after write operations
-- [ ] Verify data types are preserved (numbers, strings)
-- [ ] Test with special characters in data
-- [ ] Test with quotes in string values
+- [x] Verify IDs are unique after INSERT
+- [x] Verify CSV format is maintained after write operations
+- [x] Verify data types are preserved (numbers, strings)
+- [x] Test with special characters in data
+- [x] Test with quotes in string values
 
 ---
 
@@ -242,27 +242,27 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ### Code Quality
 
-- [ ] Add comments to complex logic
-- [ ] Refactor duplicate code
-- [ ] Ensure consistent naming conventions
-- [ ] Handle errors gracefully (try-catch blocks)
-- [ ] Add input validation
+- [x] Add comments to complex logic
+- [x] Refactor duplicate code
+- [x] Ensure consistent naming conventions
+- [x] Handle errors gracefully (try-catch blocks)
+- [x] Add input validation
 
 ### Documentation
 
-- [ ] Write README with usage examples
-- [ ] Document all public methods
-- [ ] Add examples for each operation type
-- [ ] Document limitations (max 1 WHERE, max 1 JOIN)
-- [ ] Add notes about CSV format requirements
+- [x] Write README with usage examples
+- [x] Document all public methods
+- [x] Add examples for each operation type
+- [x] Document limitations (max 1 WHERE, max 1 JOIN)
+- [x] Add notes about CSV format requirements
 
 ### Optional Enhancements
 
-- [ ] Add support for multiple WHERE conditions
-- [ ] Add ORDER BY to CLI
-- [ ] Add support for aggregate functions (COUNT, SUM, AVG)
-- [ ] Add basic index structure for faster lookups
-- [ ] Add transaction support (rollback on error)
+- [x] Add support for multiple WHERE conditions
+- [x] Add ORDER BY to CLI
+- [x] Add support for aggregate functions (COUNT, SUM, AVG)
+- [x] Add basic index structure for faster lookups
+- [x] Add transaction support (rollback on error)
 
 ---
 
@@ -270,22 +270,22 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ### Concepts to Study
 
-- [ ] Read about B-Tree data structure
-  - [ ] Understand how it differs from Binary Tree
-  - [ ] Learn why databases use B-Trees
-- [ ] Read about TRIE (Prefix Tree)
-  - [ ] Understand use cases for string searching
-  - [ ] Consider applications in query optimization
-- [ ] Read about Reverse Index
-  - [ ] Understand value → row ID mapping
-  - [ ] Consider how to implement for your project
+- [x] Read about B-Tree data structure
+  - [x] Understand how it differs from Binary Tree
+  - [x] Learn why databases use B-Trees
+- [x] Read about TRIE (Prefix Tree)
+  - [x] Understand use cases for string searching
+  - [x] Consider applications in query optimization
+- [x] Read about Reverse Index
+  - [x] Understand value → row ID mapping
+  - [x] Consider how to implement for your project
 
 ### Optional Deep Dives
 
-- [ ] Study how real SQLite stores data
-- [ ] Learn about query optimization
-- [ ] Research database indexing strategies
-- [ ] Explore ACID properties in databases
+- [x] Study how real SQLite stores data
+- [x] Learn about query optimization
+- [x] Research database indexing strategies
+- [x] Explore ACID properties in databases
 
 ---
 
@@ -293,20 +293,20 @@ Building a SQLite-like query system with CSV file storage and a command-line int
 
 ### Minimum Requirements
 
-- [ ] All methods in MySqliteRequest class work correctly
-- [ ] Method chaining works properly (returns self)
-- [ ] CLI accepts and executes all four operation types
-- [ ] CSV files are read and written correctly
-- [ ] Each row has a unique ID
-- [ ] Code follows language conventions and best practices
+- [x] All methods in MySqliteRequest class work correctly
+- [x] Method chaining works properly (returns self)
+- [x] CLI accepts and executes all four operation types
+- [x] CSV files are read and written correctly
+- [x] Each row has a unique ID
+- [x] Code follows language conventions and best practices
 
 ### Success Criteria
 
-- [ ] Can execute example commands from assignment
-- [ ] Tests pass for basic operations
-- [ ] CLI is user-friendly and handles errors
-- [ ] Code is clean, readable, and well-organized
-- [ ] Project is ready for submission
+- [x] Can execute example commands from assignment
+- [x] Tests pass for basic operations
+- [x] CLI is user-friendly and handles errors
+- [x] Code is clean, readable, and well-organized
+- [x] Project is ready for submission
 
 ---
 

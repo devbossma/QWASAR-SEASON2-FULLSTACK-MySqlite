@@ -1,11 +1,5 @@
 id,name,email,age,state,major,gpa,enrollment_year
-1,Alice Johnson,alice.j@university.edu,20,California,Computer Science,3.8,2022
-2,Bob Smith,bob.smith@university.edu,22,Texas,Mathematics,3.5,2020
-3,Charlie Brown,charlie.b@university.edu,21,New York,Physics,3.9,2021
-4,Diana Prince,diana.p@university.edu,19,California,Computer Science,3.7,2023
-5,Eve Davis,eve.d@university.edu,23,Texas,Biology,3.6,2019
-6,Frank Miller,frank.m@university.edu,20,New York,Computer Science,3.4,2022
-7,Grace Lee,grace.l@university.edu,21,California,Mathematics,3.9,2021
-8,Henry Wilson,henry.w@university.edu,22,Florida,Physics,3.3,2020
-9,Iris Chen,iris.c@university.edu,20,New York,Biology,3.8,2022
-10,Jack Taylor,jack.t@university.edu,19,Texas,Computer Science,3.5,2023
+1,John Doe,john@example.com,20,CA,CS,3.8,2023
+2,Jane Smith,jane@example.com,22,NY,Math,3.9,2022
+3,Alice Brown,alice@example.com,19,TX,Physics,3.5,2024
+4,Bob NoClass,bob@example.com,25,FL,Art,2.0,2020
